@@ -29,19 +29,19 @@ userControllers.login = (req, res) => {
       if (!user) {
          res.json({ errors: "invalid email or password" });
       }
-   });
-   bcryptjs.compare(body.password, user.password).then((match) => {
-      if (match) {
-         const tokenData = {
-            _id: user._id,
-            email: user.email,
-            username: user.username,
-         };
-         const token = jwt.sign(tokenData, "mem123", { expiresIn: "30d" });
-         res.json({ token: `Bearer ${token}` });
-      } else {
-         res.json({ errors: "invalid email or password" });
-      }
+      bcryptjs.compare(body.password, user.password).then((match) => {
+         if (match) {
+            const tokenData = {
+               _id: user._id,
+               email: user.email,
+               username: user.username,
+            };
+            const token = jwt.sign(tokenData, "mem123", { expiresIn: "30d" });
+            res.json({ token: `Bearer ${token}` });
+         } else {
+            res.json({ errors: "invalid email or password" });
+         }
+      });
    });
 };
 
