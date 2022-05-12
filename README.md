@@ -12,7 +12,33 @@ In this backend setup the backend has been built using Node JS and Express JS. M
 
 ## API Testing Using Postman:
 
+### For User Authentication:
+1, When user details were passed as raw json data in the postman the recieved response included encrypted user password as shown below. POST HTTP method to be used.
+![registerUser](https://user-images.githubusercontent.com/103234442/168008366-7e2279fe-cb72-4b4a-8301-1795cec46ef4.PNG)
 
+2, After registration logging of user api was tested, the returned response was a cryptographic algorithm which is nothing but JWT(JSON Web Token).
+![loginUser](https://user-images.githubusercontent.com/103234442/168008708-42c0e3b4-c8b5-48d1-9406-0f86240978d3.PNG)
+
+3, In order to get the account information of a user use GET HTTP method pass JWT as Authorization Token value in the postman and returned reponse will be same as below.
+![getUser](https://user-images.githubusercontent.com/103234442/168009260-6a469220-e4bb-428f-b17d-be91d496734c.PNG)
+
+### Testing for Posts API Endpoints
+NOTE - **Pass Authorization token value**
+
+1, Initial GET HTTP method for the posts, it returns empty array.
+![firstGetPosts](https://user-images.githubusercontent.com/103234442/168013759-b02e67c7-3760-4f9d-97a7-621510575005.PNG)
+
+2, Creation of post using POST method, The returned response will have unique id for this particular post.
+![postPosts](https://user-images.githubusercontent.com/103234442/168013992-e658e540-ccea-427f-8acc-e3d8687d52f6.PNG)
+
+3, The below image is for getting the post using the post id as the api end point.
+![getPostId](https://user-images.githubusercontent.com/103234442/168014137-de30fcbc-27a0-45fd-820e-d82a98cf8f80.PNG)
+
+4, The updation of the post is done by PUT method and the response recieved will be updated post data.
+![putPost](https://user-images.githubusercontent.com/103234442/168014272-cad8a7c6-83ef-4bf6-87db-0b8f8ba9f1cc.PNG)
+
+5, Finally the deletion of the post which is done using DELETE method. The response recieved will the whole post which is deleted.
+![deletePost](https://user-images.githubusercontent.com/103234442/168014486-55a9c483-c3aa-44cd-ac9b-3d57ede82ce2.PNG)
 
 ## Packages Used:
 
