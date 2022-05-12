@@ -10,7 +10,6 @@ In this backend setup the backend has been built using Node JS and Express JS. M
   <li>Copy the backend url from code dropdown and paste it on the visual studio code terminal and hit enter.</li>
   <li>After the completion of the cloning install the packages by running the command `npm install`. All the necessary packages will be installed.</li>
   <li>Then start the backend by entering `node app.js` in the terminal</li>
-  <li>API Documentation is provided in the pdf file inside the repository</li>
 </ul>
 
 <br/>
