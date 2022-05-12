@@ -2,8 +2,6 @@
 
 In this backend setup the backend has been built using Node JS and Express JS. MongoDB database has been used for express js to interact with it. User Authentication has been performed and routing has been set by giving particular api endpoints.
 
-<br/>
-
 ## Cloning:
 <ul>
   <li>Go to https://github.com/raveesh-gowda/memories-backend</li>
@@ -12,11 +10,9 @@ In this backend setup the backend has been built using Node JS and Express JS. M
   <li>Then start the backend by entering `node app.js` in the terminal</li>
 </ul>
 
-<br/>
-
 ## API Testing Using Postman:
 
-<br/>
+
 
 ## Packages Used:
 
